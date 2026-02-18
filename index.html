@@ -3,21 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Plan: Constructor Web con IA para WordPress</title>
+    <title>¿Puedo crear yo solo un constructor web IA para WordPress?</title>
     <style>
       :root {
-        color-scheme: light;
-        --bg: #f6f8fc;
-        --card: #ffffff;
+        --bg: #f5f7ff;
+        --card: #fff;
         --text: #1f2937;
         --muted: #4b5563;
         --primary: #1d4ed8;
+        --ok: #065f46;
+        --warn: #92400e;
         --border: #dbe3f0;
       }
 
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
 
       body {
         margin: 0;
@@ -28,49 +27,36 @@
       }
 
       .container {
-        max-width: 960px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 2rem 1rem 3rem;
       }
 
-      h1,
-      h2,
-      h3 {
-        line-height: 1.25;
-      }
-
-      h1 {
-        color: #0f172a;
-        margin-bottom: 0.5rem;
-      }
+      h1 { margin: 0 0 0.5rem; }
+      h2 { margin: 0.2rem 0 0.5rem; }
 
       .intro {
         color: var(--muted);
-        margin-bottom: 1.5rem;
+        margin: 0 0 1.2rem;
       }
 
       .card {
         background: var(--card);
         border: 1px solid var(--border);
         border-radius: 12px;
-        padding: 1rem 1.25rem;
+        padding: 1rem 1.2rem;
         margin: 0.9rem 0;
-        box-shadow: 0 1px 4px rgba(16, 24, 40, 0.04);
       }
 
       .badge {
         display: inline-block;
-        padding: 0.2rem 0.6rem;
         border-radius: 999px;
         background: #e0ecff;
         color: var(--primary);
         font-size: 0.82rem;
         font-weight: 600;
-        margin-bottom: 0.35rem;
-      }
-
-      ul {
-        margin: 0.4rem 0 0.2rem 1.25rem;
+        padding: 0.2rem 0.6rem;
+        margin-bottom: 0.45rem;
       }
 
       .grid {
@@ -78,99 +64,130 @@
         gap: 0.9rem;
       }
 
-      @media (min-width: 800px) {
-        .grid.two {
-          grid-template-columns: 1fr 1fr;
-        }
+      @media (min-width: 860px) {
+        .grid.two { grid-template-columns: 1fr 1fr; }
       }
 
+      .pill {
+        display: inline-block;
+        font-size: 0.85rem;
+        font-weight: 600;
+        padding: 0.15rem 0.5rem;
+        border-radius: 999px;
+        margin-right: 0.4rem;
+      }
+
+      .ok { background: #dcfce7; color: var(--ok); }
+      .warn { background: #fef3c7; color: var(--warn); }
+
+      ul { margin: 0.35rem 0 0.15rem 1.25rem; }
+      ol { margin: 0.35rem 0 0.15rem 1.25rem; }
+
       .footer-note {
-        margin-top: 1.5rem;
-        font-size: 0.95rem;
         color: var(--muted);
+        margin-top: 1rem;
+        font-size: 0.96rem;
       }
     </style>
   </head>
   <body>
     <main class="container">
-      <h1>Sí, tu proyecto es viable ✅</h1>
+      <h1>¿Puedes hacerlo tú con ayuda de Codex y poca ayuda externa?</h1>
       <p class="intro">
-        Como empresa de hosting (cPanel + Plesk), puedes lanzar un constructor asistido por IA para WordPress sin
-        programar desde cero. Aquí tienes una ruta práctica para empezar con bajo riesgo.
+        <strong>Sí, es viable</strong>, pero con enfoque realista: empezar por un MVP simple y automatizar paso a paso.
+        No necesitas ser programador para liderarlo si usas Codex como copiloto técnico.
       </p>
 
       <section class="card">
-        <span class="badge">Cómo funcionaría para tu cliente</span>
+        <span class="badge">Respuesta directa</span>
+        <p>
+          <span class="pill ok">Viable</span>
+          para un <strong>MVP funcional en 8-16 semanas</strong> si reduces alcance.
+        </p>
+        <p>
+          <span class="pill warn">No viable</span>
+          intentar desde el día 1 un producto tipo Wix/Elementor con IA completa, multiidioma y cero soporte.
+        </p>
+      </section>
+
+      <div class="grid two">
+        <section class="card">
+          <span class="badge">Qué sí puedes construir casi solo</span>
+          <ul>
+            <li>Asistente (wizard) de 8-12 preguntas para definir negocio y estilo.</li>
+            <li>Generación de textos de páginas (inicio, servicios, contacto, FAQ) con IA.</li>
+            <li>Instalación automática de WordPress + tema + plugins base.</li>
+            <li>Creación de páginas por plantilla y publicación de borrador.</li>
+            <li>Panel simple en tu área cliente para lanzar “Crear mi web”.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <span class="badge">Dónde sí conviene ayuda externa mínima</span>
+          <ul>
+            <li>1 auditoría inicial de arquitectura (8-16 horas).</li>
+            <li>Revisión de seguridad de WordPress/API (8-12 horas).</li>
+            <li>Soporte puntual para integración cPanel/Plesk si se complica.</li>
+            <li>QA final antes del piloto con clientes reales.</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="card">
+        <span class="badge">Plan práctico para hacerlo tú con Codex</span>
         <ol>
-          <li>El cliente responde preguntas simples (tipo negocio, estilo, servicios, ciudad, idioma).</li>
-          <li>La IA genera propuesta de estructura (inicio, servicios, contacto, etc.) y textos.</li>
-          <li>Se instala WordPress + tema + plugins recomendados en su hosting.</li>
-          <li>Se cargan páginas, imágenes de stock y SEO básico automáticamente.</li>
-          <li>Cliente revisa y publica en minutos.</li>
+          <li><strong>Semana 1-2:</strong> definir 3 nichos y 10 plantillas base de páginas.</li>
+          <li><strong>Semana 3-4:</strong> construir wizard y prompts con Codex (textos + estructura).</li>
+          <li><strong>Semana 5-8:</strong> automatizar WordPress (instalación, plugins, creación de contenidos).</li>
+          <li><strong>Semana 9-10:</strong> conectar a tu área cliente y activar flujo 1-click.</li>
+          <li><strong>Semana 11-12:</strong> piloto con 10-20 clientes y métricas de conversión/soporte.</li>
         </ol>
       </section>
 
       <div class="grid two">
         <section class="card">
-          <span class="badge">MVP (versión inicial en 8-12 semanas)</span>
+          <span class="badge">Coste orientativo si lo lideras tú</span>
           <ul>
-            <li>Wizard de 6-10 preguntas.</li>
-            <li>Generación de textos por IA (OpenAI/Claude).</li>
-            <li>Plantillas por sector (restaurante, abogado, clínica...).</li>
-            <li>Integración con WordPress vía REST API / WP-CLI.</li>
-            <li>Botón “Crear mi web” dentro de área de cliente.</li>
+            <li><strong>IA (tokens):</strong> 0,50€ - 5€ por web generada.</li>
+            <li><strong>Infra extra:</strong> bajo, usando tu stack actual de hosting.</li>
+            <li><strong>Ayuda externa puntual:</strong> 1.500€ - 8.000€ total.</li>
+            <li><strong>Tu inversión principal:</strong> tiempo de producto y operación.</li>
           </ul>
         </section>
 
         <section class="card">
-          <span class="badge">Costes orientativos</span>
+          <span class="badge">Riesgos y límites para evitar frustración</span>
           <ul>
-            <li><strong>MVP externalizado:</strong> 20.000€ - 60.000€.</li>
-            <li><strong>Versión más completa:</strong> 80.000€ - 200.000€.</li>
-            <li><strong>Coste IA por web:</strong> 0,50€ - 5€ (según uso).</li>
-            <li><strong>Mantenimiento mensual:</strong> 1.000€ - 6.000€.</li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="grid two">
-        <section class="card">
-          <span class="badge">Equipo mínimo recomendado</span>
-          <ul>
-            <li>1 Product Manager (puede ser tú con apoyo externo).</li>
-            <li>1 Full Stack dev con experiencia WordPress.</li>
-            <li>1 UX/UI designer.</li>
-            <li>1 DevOps / SysAdmin (integración cPanel + Plesk).</li>
-            <li>QA part-time para pruebas.</li>
-          </ul>
-        </section>
-
-        <section class="card">
-          <span class="badge">Riesgos y cómo reducirlos</span>
-          <ul>
-            <li><strong>Textos genéricos:</strong> usar plantillas por nicho + revisión rápida.</li>
-            <li><strong>Sitios lentos:</strong> stack optimizado + caché + imágenes comprimidas.</li>
-            <li><strong>Soporte elevado:</strong> onboarding guiado y límites claros del MVP.</li>
-            <li><strong>Coste IA impredecible:</strong> límites de uso por plan.</li>
+            <li>No prometas “web perfecta en 1 clic”: ofrece “borrador profesional editable”.</li>
+            <li>Empieza con 2-3 tipos de negocio, no con todos los sectores.</li>
+            <li>Limita revisiones IA por plan para controlar costes.</li>
+            <li>Incluye revisión humana opcional premium para mejorar calidad final.</li>
           </ul>
         </section>
       </div>
 
       <section class="card">
-        <span class="badge">Plan de acción para empezar (30 días)</span>
-        <ul>
-          <li>Semana 1: definir 3 segmentos de cliente y 10 plantillas base.</li>
-          <li>Semana 2: contratar partner técnico (freelance/estudio) y diseñar MVP.</li>
-          <li>Semana 3: prototipo funcional con 1-click WordPress + generación IA.</li>
-          <li>Semana 4: prueba piloto con 10-20 clientes reales.</li>
-        </ul>
+        <span class="badge">Recomendación final</span>
+        <p>
+          Si eres primerizo, la mejor estrategia es: <strong>tú como Product Owner + Codex como soporte técnico +
+          ayuda externa mínima especializada</strong>. Así reduces riesgo, aprendes rápido y puedes validar negocio antes
+          de invertir fuerte.
+        </p>
       </section>
 
       <p class="footer-note">
-        Siguiente paso recomendado: preparar un documento de requisitos + presupuesto cerrado para pedir 2-3 propuestas
-        técnicas y comparar.
+        Próximo paso: te preparo un checklist de ejecución (herramientas, prompts, hitos y presupuesto) para arrancar
+        esta misma semana.
       </p>
     </main>
   </body>
 </html>
-<html>  <head>    <meta http-equiv="content-type" content="text/html; charset=utf-8">    <title>Hola Mundo</title>  </head>  <body>    <p>¡¡Hola Mundo GIT!!</p>  </body></html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Hola Mundo</title>
+  </head>
+  <body>
+    <p>¡¡Hola Mundo GIT!!</p>
+  </body>
+</html>
