@@ -1,1 +1,176 @@
-<!DOCTYPE html><html>  <head>    <meta http-equiv="content-type" content="text/html; charset=utf-8">    <title>Hola Mundo</title>  </head>  <body>    <p>¡¡Hola Mundo GIT!!</p>  </body></html>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plan: Constructor Web con IA para WordPress</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f8fc;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #4b5563;
+        --primary: #1d4ed8;
+        --border: #dbe3f0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.25;
+      }
+
+      h1 {
+        color: #0f172a;
+        margin-bottom: 0.5rem;
+      }
+
+      .intro {
+        color: var(--muted);
+        margin-bottom: 1.5rem;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1rem 1.25rem;
+        margin: 0.9rem 0;
+        box-shadow: 0 1px 4px rgba(16, 24, 40, 0.04);
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 0.2rem 0.6rem;
+        border-radius: 999px;
+        background: #e0ecff;
+        color: var(--primary);
+        font-size: 0.82rem;
+        font-weight: 600;
+        margin-bottom: 0.35rem;
+      }
+
+      ul {
+        margin: 0.4rem 0 0.2rem 1.25rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 0.9rem;
+      }
+
+      @media (min-width: 800px) {
+        .grid.two {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .footer-note {
+        margin-top: 1.5rem;
+        font-size: 0.95rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Sí, tu proyecto es viable ✅</h1>
+      <p class="intro">
+        Como empresa de hosting (cPanel + Plesk), puedes lanzar un constructor asistido por IA para WordPress sin
+        programar desde cero. Aquí tienes una ruta práctica para empezar con bajo riesgo.
+      </p>
+
+      <section class="card">
+        <span class="badge">Cómo funcionaría para tu cliente</span>
+        <ol>
+          <li>El cliente responde preguntas simples (tipo negocio, estilo, servicios, ciudad, idioma).</li>
+          <li>La IA genera propuesta de estructura (inicio, servicios, contacto, etc.) y textos.</li>
+          <li>Se instala WordPress + tema + plugins recomendados en su hosting.</li>
+          <li>Se cargan páginas, imágenes de stock y SEO básico automáticamente.</li>
+          <li>Cliente revisa y publica en minutos.</li>
+        </ol>
+      </section>
+
+      <div class="grid two">
+        <section class="card">
+          <span class="badge">MVP (versión inicial en 8-12 semanas)</span>
+          <ul>
+            <li>Wizard de 6-10 preguntas.</li>
+            <li>Generación de textos por IA (OpenAI/Claude).</li>
+            <li>Plantillas por sector (restaurante, abogado, clínica...).</li>
+            <li>Integración con WordPress vía REST API / WP-CLI.</li>
+            <li>Botón “Crear mi web” dentro de área de cliente.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <span class="badge">Costes orientativos</span>
+          <ul>
+            <li><strong>MVP externalizado:</strong> 20.000€ - 60.000€.</li>
+            <li><strong>Versión más completa:</strong> 80.000€ - 200.000€.</li>
+            <li><strong>Coste IA por web:</strong> 0,50€ - 5€ (según uso).</li>
+            <li><strong>Mantenimiento mensual:</strong> 1.000€ - 6.000€.</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="grid two">
+        <section class="card">
+          <span class="badge">Equipo mínimo recomendado</span>
+          <ul>
+            <li>1 Product Manager (puede ser tú con apoyo externo).</li>
+            <li>1 Full Stack dev con experiencia WordPress.</li>
+            <li>1 UX/UI designer.</li>
+            <li>1 DevOps / SysAdmin (integración cPanel + Plesk).</li>
+            <li>QA part-time para pruebas.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <span class="badge">Riesgos y cómo reducirlos</span>
+          <ul>
+            <li><strong>Textos genéricos:</strong> usar plantillas por nicho + revisión rápida.</li>
+            <li><strong>Sitios lentos:</strong> stack optimizado + caché + imágenes comprimidas.</li>
+            <li><strong>Soporte elevado:</strong> onboarding guiado y límites claros del MVP.</li>
+            <li><strong>Coste IA impredecible:</strong> límites de uso por plan.</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="card">
+        <span class="badge">Plan de acción para empezar (30 días)</span>
+        <ul>
+          <li>Semana 1: definir 3 segmentos de cliente y 10 plantillas base.</li>
+          <li>Semana 2: contratar partner técnico (freelance/estudio) y diseñar MVP.</li>
+          <li>Semana 3: prototipo funcional con 1-click WordPress + generación IA.</li>
+          <li>Semana 4: prueba piloto con 10-20 clientes reales.</li>
+        </ul>
+      </section>
+
+      <p class="footer-note">
+        Siguiente paso recomendado: preparar un documento de requisitos + presupuesto cerrado para pedir 2-3 propuestas
+        técnicas y comparar.
+      </p>
+    </main>
+  </body>
+</html>
+<html>  <head>    <meta http-equiv="content-type" content="text/html; charset=utf-8">    <title>Hola Mundo</title>  </head>  <body>    <p>¡¡Hola Mundo GIT!!</p>  </body></html>
